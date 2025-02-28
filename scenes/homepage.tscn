@@ -21,7 +21,6 @@ shader_parameter/speedY = 0.1
 script = ExtResource("1_83gn6")
 
 [node name="BG" type="TextureRect" parent="."]
-visible = false
 material = SubResource("ShaderMaterial_wohdl")
 offset_left = -32.0
 offset_top = -40.0
@@ -44,9 +43,9 @@ anchor_top = -10.075
 anchor_right = 1.463
 anchor_bottom = -3.35
 offset_left = 32.0
-offset_top = 400.0
+offset_top = 416.0
 offset_right = 864.0
-offset_bottom = 548.0
+offset_bottom = 566.0
 grow_horizontal = 2
 theme = ExtResource("4_x7jcu")
 theme_override_font_sizes/normal_font_size = 92
@@ -62,7 +61,7 @@ anchor_bottom = -3.35
 offset_left = 40.0
 offset_top = 584.0
 offset_right = 864.0
-offset_bottom = 1164.0
+offset_bottom = 1128.0
 grow_horizontal = 2
 theme = ExtResource("4_x7jcu")
 theme_override_font_sizes/normal_font_size = 48
@@ -70,11 +69,12 @@ bbcode_enabled = true
 text = "Mapel: "
 
 [node name="Time" type="RichTextLabel" parent="."]
-offset_left = 134.0
-offset_top = 196.0
-offset_right = 338.0
-offset_bottom = 225.0
+offset_left = 112.0
+offset_top = 341.0
+offset_right = 776.0
+offset_bottom = 400.0
 theme = ExtResource("4_x7jcu")
+theme_override_font_sizes/normal_font_size = 60
 text = "Time: "
 script = ExtResource("5_v3dpd")
 
@@ -99,7 +99,7 @@ script = ExtResource("6_pioxs")
 
 [node name="Title" type="Sprite2D" parent="."]
 position = Vector2(446.461, 179.875)
-scale = Vector2(1.78597, 1.78597)
+scale = Vector2(1.44065, 1.44065)
 texture = ExtResource("4_puuk7")
 
 [node name="description" type="RichTextLabel" parent="Title"]
