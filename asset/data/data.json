@@ -1,0 +1,98 @@
+[
+  {
+	"hari": "senin",
+	"waktu_masuk": "12:50:00 PM",
+	"mata_pelajaran": "Bahasa Inggris",
+	"nama_guru": "Pak Gunawan"
+  },
+  {
+	"hari": "senin",
+	"waktu_masuk": "02:50:00 PM",
+	"mata_pelajaran": "Bahasa Indonesia",
+	"nama_guru": "Bu Rumasni"
+  },
+  {
+	"hari": "senin",
+	"waktu_masuk": "04:25:00 PM",
+	"mata_pelajaran": "RPL",
+	"nama_guru": "Pak Urip"
+  },
+  {
+	"hari": "selasa",
+	"waktu_masuk": "12:50:00 PM",
+	"mata_pelajaran": "Agama",
+	"nama_guru": "Bu Chapi"
+  },
+  {
+	"hari": "selasa",
+	"waktu_masuk": "02:10:00 PM",
+	"mata_pelajaran": "RPL",
+	"nama_guru": "Pak Urip"
+  },
+  {
+	"hari": "selasa",
+	"waktu_masuk": "03:45:00 PM",
+	"mata_pelajaran": "PKN/Sejarah",
+	"nama_guru": "Bu Cok"
+  },
+  {
+	"hari": "selasa",
+	"waktu_masuk": "05:05:00 PM",
+	"mata_pelajaran": "Matematika",
+	"nama_guru": "Bu Linda"
+  },
+  {
+	"hari": "rabu",
+	"waktu_masuk": "12:50:00 PM",
+	"mata_pelajaran": "RPL",
+	"nama_guru": "Pak Urip"
+  },
+  {
+	"hari": "rabu",
+	"waktu_masuk": "03:45:00 PM",
+	"mata_pelajaran": "Desain Grafis",
+	"nama_guru": "Bu Chintya"
+  },
+  {
+	"hari": "rabu",
+	"waktu_masuk": "05:05:00 PM",
+	"mata_pelajaran": "PKKWU",
+	"nama_guru": "Bu Yeni"
+  },
+  {
+	"hari": "kamis",
+	"waktu_masuk": "12:50:00 PM",
+	"mata_pelajaran": "Bahasa Bali",
+	"nama_guru": "Bu Lina"
+  },
+  {
+	"hari": "kamis",
+	"waktu_masuk": "02:10:00 PM",
+	"mata_pelajaran": "PKKWU",
+	"nama_guru": "Bu Yeni"
+  },
+  {
+	"hari": "kamis",
+	"waktu_masuk": "04:25:00 PM",
+	"mata_pelajaran": "RPL",
+	"nama_guru": "Pak Urip"
+  },
+  {
+	"hari": "jumat",
+	"waktu_masuk": "12:50:00 PM",
+	"mata_pelajaran": "P5",
+	"nama_guru": "Team P5"
+  },
+  {
+	"hari": "jumat",
+	"waktu_masuk": "03:45:00 PM",
+	"mata_pelajaran": "RPL",
+	"nama_guru": "Pak Urip"
+  },
+  {
+	"hari": "sabtu",
+	"waktu_masuk": "02:00:00 PM",
+	"mata_pelajaran": "Ekstra Robotik",
+	"nama_guru": "Team GRED"
+  }
+]

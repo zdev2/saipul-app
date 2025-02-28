@@ -1,0 +1,56 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Saipul App"
+config/name_localized={
+"en": "Shaifull",
+"id": "Saipul",
+"the_KP": "Winnie The North"
+}
+config/description="Time management app"
+config/version="1"
+run/main_scene="res://scenes/homepage.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+config/icon="res://asset/icon/icon.png"
+
+[display]
+
+window/size/viewport_width=900
+window/size/viewport_height=1600
+window/size/mode=3
+window/stretch/mode="viewport"
+window/handheld/orientation=1
+
+[dotnet]
+
+project/assembly_name="Saipul App"
+
+[input]
+
+SPASI={
+"deadzone": 0.5,
+"events": []
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(1, 1, 1, 1)

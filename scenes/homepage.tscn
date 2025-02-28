@@ -1,0 +1,141 @@
+[gd_scene load_steps=13 format=3 uid="uid://bdhxf2e2w5kb1"]
+
+[ext_resource type="Shader" path="res://shader/scroll.gdshader" id="1_8s5q8"]
+[ext_resource type="Script" path="res://scenes/scripts/homepage.gd" id="1_83gn6"]
+[ext_resource type="Texture2D" uid="uid://bh4nxq2iwd635" path="res://asset/backgrounds/wow2.png" id="1_jnpm8"]
+[ext_resource type="Texture2D" uid="uid://dcp6lpgxkafyp" path="res://asset/bertolt.jpeg" id="1_nxeb3"]
+[ext_resource type="Script" path="res://scenes/scripts/Bertolt.gd" id="4_j6oht"]
+[ext_resource type="Texture2D" uid="uid://dvc7556sdwspf" path="res://asset/backgrounds/title1.png" id="4_puuk7"]
+[ext_resource type="Theme" uid="uid://c1dybv5i30tc0" path="res://scenes/base.tres" id="4_x7jcu"]
+[ext_resource type="Script" path="res://scenes/scripts/time.gd" id="5_v3dpd"]
+[ext_resource type="Theme" uid="uid://ilekiw5o25f6" path="res://themes/homepage.tres" id="6_4b8lf"]
+[ext_resource type="Script" path="res://scenes/schedule.gd" id="6_pioxs"]
+[ext_resource type="AudioStream" uid="uid://bwm2y222o6e4e" path="res://asset/audio/taco-bell-bong-sfx.mp3" id="10_unta6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wohdl"]
+shader = ExtResource("1_8s5q8")
+shader_parameter/speedX = 0.1
+shader_parameter/speedY = 0.1
+
+[node name="Homepage" type="Node2D"]
+script = ExtResource("1_83gn6")
+
+[node name="BG" type="TextureRect" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_wohdl")
+offset_left = -32.0
+offset_top = -40.0
+offset_right = 936.0
+offset_bottom = 1648.0
+texture = ExtResource("1_jnpm8")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Upper" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 910.0
+offset_bottom = 472.0
+
+[node name="StatusLabel" type="RichTextLabel" parent="."]
+anchors_preset = -1
+anchor_left = -0.289
+anchor_top = -10.075
+anchor_right = 1.463
+anchor_bottom = -3.35
+offset_left = 32.0
+offset_top = 400.0
+offset_right = 864.0
+offset_bottom = 548.0
+grow_horizontal = 2
+theme = ExtResource("4_x7jcu")
+theme_override_font_sizes/normal_font_size = 92
+bbcode_enabled = true
+text = "Skibidi"
+
+[node name="ScheduleLabel" type="RichTextLabel" parent="."]
+anchors_preset = -1
+anchor_left = -0.289
+anchor_top = -10.075
+anchor_right = 1.463
+anchor_bottom = -3.35
+offset_left = 40.0
+offset_top = 584.0
+offset_right = 864.0
+offset_bottom = 1164.0
+grow_horizontal = 2
+theme = ExtResource("4_x7jcu")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "Mapel: "
+
+[node name="Time" type="RichTextLabel" parent="."]
+offset_left = 134.0
+offset_top = 196.0
+offset_right = 338.0
+offset_bottom = 225.0
+theme = ExtResource("4_x7jcu")
+text = "Time: "
+script = ExtResource("5_v3dpd")
+
+[node name="Timer" type="Timer" parent="Time"]
+autostart = true
+
+[node name="schedule" type="RichTextLabel" parent="Time/Timer"]
+visible = false
+anchors_preset = -1
+anchor_left = -0.289
+anchor_top = -10.075
+anchor_right = 1.463
+anchor_bottom = -3.35
+offset_left = 213.72
+offset_top = 8298.0
+offset_right = -301.24
+offset_bottom = 3175.0
+grow_horizontal = 2
+theme = ExtResource("4_x7jcu")
+bbcode_enabled = true
+script = ExtResource("6_pioxs")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(446.461, 179.875)
+scale = Vector2(1.78597, 1.78597)
+texture = ExtResource("4_puuk7")
+
+[node name="description" type="RichTextLabel" parent="Title"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -350.5
+offset_top = -72.7067
+offset_right = -21.5
+offset_bottom = -43.7067
+grow_horizontal = 2
+theme = ExtResource("4_x7jcu")
+text = "Jadwal Pelajaran Sekolah"
+
+[node name="Label" type="Label" parent="Title"]
+anchors_preset = -1
+anchor_right = 0.593
+anchor_bottom = 0.862
+offset_left = -96.3733
+offset_top = 58.0711
+offset_right = -154.956
+offset_bottom = -36.7469
+theme = ExtResource("6_4b8lf")
+text = "NIGGA EDITION"
+
+[node name="Bertold" type="Marker2D" parent="."]
+position = Vector2(440, 1368)
+gizmo_extents = 217.2
+script = ExtResource("4_j6oht")
+
+[node name="Button" type="TouchScreenButton" parent="Bertold"]
+position = Vector2(-201.506, -177)
+scale = Vector2(0.380567, 0.402709)
+texture_normal = ExtResource("1_nxeb3")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Bertold"]
+stream = ExtResource("10_unta6")
+
+[connection signal="pressed" from="Bertold/Button" to="Bertold" method="_on_button_pressed"]
